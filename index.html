@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="hero">
+        <nav class="navbar h-nav-resp">
+            <div class="logo v-class-resp"><img src="logo.png" alt="logo"></div>
+            <ul class="navlist v-class-resp">
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <div class="rightnav v-class-resp">
+                <input type="text" name="search" id="search">
+                <button class="btn">Search</button>
+            </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="heading">
+                <h1>SIPTO DAO</h1>
+                <div class="info">
+                    <h4>Smart contracts are extremely useful for automating transactional processes, and for reducing the
+                        input that humans must supply for relatively simple tasks. <br><br>
+                        
+                        The goal of a Decentralized Autonomous
+                        Organization isn’t just to reduce human inputs—it’s to eliminate them entirely. Though still largely
+                        an on-paper idea rather than one that’s been perfected in practice, a DAO is effectively a business
+                        that uses an interconnected web of smart contracts to automate all its essential and non-essential
+                        processes.</h4>
+                    
+                </div>
+                <div class="quote">
+                    - Making investing in Alternative Assets simple and accessible for everyone.
+                </div>
+                </p>
+            </div>
+
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div>
+                <form action="validation.php" method="post" id="login" class="input-group">
+                    <input type="text" name="user" class="input-field" placeholder="User-Id">
+
+                    <input type="password" name="password" class="input-field" placeholder="Enter Password">
+
+
+                    <button type="submit" class="submit-btn">Log In</button>
+                </form>
+
+                <form action="registration.php" method="post" id="register" class="input-group" action="" method="post">
+                    <input type="text" name="user" class="input-field" placeholder="User-Id">
+
+                    <input type="password" name="password" class="input-field" placeholder="Enter Password">
+
+
+
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <script>
+
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+</body>
+
+</html>
